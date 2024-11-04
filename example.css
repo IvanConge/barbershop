@@ -1,0 +1,22 @@
+.parent {
+  background-color: gray;
+  border: 2px solid black;
+  height: 500vh;
+  position: relative;
+}
+
+.child-1 {
+  background-color: coral;
+}
+
+.child-2 {
+  background-color: cornflowerblue;
+}
+
+.child-3 {
+  background-color: hotpink;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 0;
+}
