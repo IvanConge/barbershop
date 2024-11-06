@@ -1,0 +1,13 @@
+.parent {
+  background-color: gray;
+  height: 500vh;
+}
+
+.instagram {
+  fill: red;
+}
+
+.stroke {
+  fill: red;
+  width: 500px;
+}

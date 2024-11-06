@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --white: #ffffff;
+  --light-gray-op: #999da4bd;
+  --light-gray: #9da4bd;
+  --medium-gray: #555555;
+  --dark-gray: #303030;
+  --black: #000000;
+  --orange: #ff6c00;
+
+  --raleway: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+}
