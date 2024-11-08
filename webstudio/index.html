@@ -17,110 +17,113 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- header section -->
     <header class="header">
-      <nav class="header-nav">
-        <a href="header-nav-logo">WEBSTUDIO</a>
-        <ul class="header-nav-list">
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="">Studio</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="">Portfolio</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-item-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="header-address">
-        <ul class="header-address-list">
-          <li class="header-address-item">
-            <a class="header-address-item-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-address-item">
-            <a class="header-address-item-link" href="tel:110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-      <svg>
-        <use href="" />
-      </svg>
+      <!-- navigation bar -->
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="web-logo header-nav-logo" href="/">WEB<span>STUDIO</span></a>
+          <ul class="header-nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="">Studio</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="">Portfolio</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-item-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="header-address-list">
+            <li class="header-address-item">
+              <a class="header-address-item-link"
+                 href="mailto:info@devstudio.com">info@devstudio.com
+              </a>
+            </li>
+            <li class="header-address-item">
+              <a class="header-address-item-link" 
+                 href="tel:110001111111">+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+        <svg class="header-hamburger">
+          <use href="./icons/icons.svg#icon-hamburger" />
+        </svg>
+      </div>
     </header>
     <main>
       <!-- hero section -->
-      <section class="hero">
-        <h1 class="hero-heading">Effective Solutions for Your Business</h1>
-        <button class="hero-button">Order Service</button>
-        <svg class="icon">
-          <use href="./icons/icons.svg#icon-click" />
-        </svg>
-      </section>
-      <!-- about section -->
-      <section class="about">
-        <ul class="about-list">
-          <li class="about-list-item">
-            <h3 class="about-list-item-heading">Strategy</h3>
-            <p class="about-list-item-p">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="about-list-item">
-            <h3 class="about-list-item-heading">Punctuality</h3>
-            <p class="about-list-item-p">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="about-list-item">
-            <h3 class="about-list-item-heading">Diligence</h3>
-            <p class="about-list-item-p">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="about-list-item">
-            <h3 class="about-list-item-heading">Technologies</h3>
-            <p class="about-list-item-p">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- service section -->
-      <section class="service">
-        <h2 class="service-heading">What Are We Doing</h2>
-        <ul class="service-list">
-          <li class="service-list-item"><img src="" alt="" /></li>
-          <li class="service-list-item"><img src="" alt="" /></li>
-          <li class="service-list-item"><img src="" alt="" /></li>
-        </ul>
-      </section>
-      <!-- team section -->
-      <section class="team">
-        <h2 class="team-heading">Our Team</h2>
-        <ul class="team-list">
-          <li class="team-list-item">
-            <img
-              class="team-list-item-img"
-              src="./images/team-mark-guerrero.jpg"
-              alt="image of mark guerrero"
-            />
-            <div class="team-list-item-info">
-              <h3 class="team-list-item-info-name">Team Name</h3>
-              <span class="team-list-item-info-job">Product Designer</span>
-            </div>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="hero">
+          <h1 class="hero-heading">Effective Solutions for Your Business</h1>
+          <button class="hero-button">Order Service</button>
+        </section>
+        <!-- about section -->
+        <section class="about">
+          <ul class="about-list">
+            <li class="about-list-item">
+              <h3 class="about-list-item-heading">Strategy</h3>
+              <p class="about-list-item-p">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="about-list-item">
+              <h3 class="about-list-item-heading">Punctuality</h3>
+              <p class="about-list-item-p">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="about-list-item">
+              <h3 class="about-list-item-heading">Diligence</h3>
+              <p class="about-list-item-p">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="about-list-item">
+              <h3 class="about-list-item-heading">Technologies</h3>
+              <p class="about-list-item-p">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- service section -->
+        <section class="service">
+          <h2 class="service-heading">What Are We Doing</h2>
+          <ul class="service-list">
+            <li class="service-list-item"><img src="" alt="" /></li>
+            <li class="service-list-item"><img src="" alt="" /></li>
+            <li class="service-list-item"><img src="" alt="" /></li>
+          </ul>
+        </section>
+        <!-- team section -->
+        <section class="team">
+          <h2 class="team-heading">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-list-item">
+              <img
+                class="team-list-item-img"
+                src="./images/team-mark-guerrero.jpg"
+                alt="image of mark guerrero"
+              />
+              <div class="team-list-item-info">
+                <h3 class="team-list-item-info-name">Team Name</h3>
+                <span class="team-list-item-info-job">Product Designer</span>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <a class="footer-logo" href="/">WEBSTUDIO</a>

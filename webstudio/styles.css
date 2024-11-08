@@ -29,8 +29,8 @@ address {
   --light-slate: #8e8f99;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
-  --navy-blue-modal: #2e2f42;
-  --grey: #2e2f42;
+  --navy-blue-modal: #2e2f4266;
+  --grey: #2e2f42b3;
   --white: #ffffff;
   --dairy: #fcfcfc;
 
@@ -42,6 +42,75 @@ body {
   font-family: var(--roboto);
 }
 
-.icon {
-  fill: red;
+/* global styles */
+.web-logo {
+  font-family: var(--raleway);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+}
+
+.web-logo span {
+  color: var(--navy-blue);
+}
+
+/* mobile section */
+.container {
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* header section */
+.header {
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+  display: flex;
+  height: 72px;
+  max-width: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-list,
+.header-address {
+  display: none;
+}
+
+.header-hamburger {
+  stroke: black;
+  width: 32px;
+  height: 22px;
+}
+
+/* hero section */
+.hero {
+  background-image: linear-gradient(var(--grey), var(--grey)),
+    url(./images/hero-mobile-bg.jpg);
+  padding: 100px 0;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1157px) {
+  .header-hamburger {
+    stroke: red;
+  }
+
+  .container {
+    max-width: 736px;
+    padding: 0 15px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1158px) {
+  .header-hamburger {
+    stroke: blue;
+  }
 }
