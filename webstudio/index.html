@@ -20,22 +20,36 @@
     <header class="header">
       <div class="container header-container">
         <a class="web-logo" href="/">WEB<span>STUDIO</span></a>
-        <button class="menu-toggle">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu-toggle-icon">
             <use href="./icons/icons.svg#icon-hamburger"/>
           </svg>
         </button>
       </div>
     </header>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu">close</button>
+      <ul>
+        <li><a href="">Studio</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+      <ul>
+        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+    </div>
     <main>
+      <!-- HERO SECTION -->
       <section class="hero">
-        <div class="container">
-          <h1>Effective Solutions For Your Business</h1>
-          <button>Order Service</button>
+        <div class="container hero-container">
+          <h1 class="section-heading hero-heading">Effective Solutions<br/>For Your Business</h1>
+          <button class="hero-button">Order Service</button>
         </div>
       </section>
-      <section class="about">
-        <div class="container">
+      <!-- ABOUT SECTION -->
+      <section class="section about">
+        <div class="container about-container">
           <ul class="about-list">
             <li class="about-list-item">
               <h3 class="section-heading about-list-item-heading">Strategy</h3>
@@ -62,33 +76,150 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <!-- TEAM SECTION -->
+      <section class="section team">
         <div class="container">
-          <h2 class="section-heading">Our Team</h2>
+          <h2 class="section-heading team-heading">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img class="team-list-item-img" src="./images/team-mark-guerrero.jpg" alt="image of">
-              <h3 class="team-list-item-name"></h3>
-              <span class="team-list-item-title"></span>
-              <ul class="team-list-item-socmed">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+              <img class="team-list-img" src="./images/team-mark-guerrero.jpg" alt="image of">
+              <div class="team-list-info">
+                <h3 class="team-list-name">Mark Guerrero</h3>
+                <span class="team-list-title">Product Designer</span>
+                <ul class="team-list-socmed">
+                  <li class="team-list-socmed-item">
+                    <a class="team-list-socmed-item-link" href="https://www.instagram.com/" target="_blank">
+                      <svg class="team-list-socmed-item-svg">
+                        <use href="./icons/icons.svg#icon-instagram"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-list-socmed-item">
+                    <a class="team-list-socmed-item-link" href="https://x.com/" target="_blank">
+                      <svg class="team-list-socmed-item-svg">
+                        <use href="./icons/icons.svg#icon-twitter"/>
+                      </svg>
+                    </a>
+                  </li>                 
+                  <li class="team-list-socmed-item">
+                    <a class="team-list-socmed-item-link" href="https://www.facebook.com/" target="_blank">
+                      <svg class="team-list-socmed-item-svg">
+                        <use href="./icons/icons.svg#icon-facebook"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-list-socmed-item">
+                    <a class="team-list-socmed-item-link" href="https://www.linkedin.com/" target="_blank">
+                      <svg class="team-list-socmed-item-svg">
+                        <use href="./icons/icons.svg#icon-linkedin"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="customers">
-        <div class="container"></div>
+      <!-- CUSTOMERS SECTION -->
+      <section class="section customers">
+        <div class="container">
+          <h2 class="section-heading">Customers</h2>
+          <ul class="customers-list">
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-01"/>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-02"/>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-03"/>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-04"/>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-05"/>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-list-item">
+              <a class="customers-list-item-link" href="">
+                <svg class="customers-list-item-svg">
+                  <use href="./icons/icons.svg#icon-customers-logo-06"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <a class="web-logo" href="/">WEB<span>STUDIO</span></a>
-        <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    <footer class="section footer">
+      <div class="container footer-container">
+        <div class="footer-nav">
+          <a class="web-logo" href="/">WEB<span>STUDIO</span></a>
+          <p class="footer-nav-p">Increase the flow of customers and<br/>sales for your business with digital<br/>marketing & growth solutions.</p>
+        </div>
+        <div class="footer-socmed">
+          <h3 class="footer-heading">Social Media </h3>
+          <ul class="footer-socmed-list">
+            <li class="footer-list-socmed-item">
+              <a class="footer-list-socmed-item-link" href="https://www.instagram.com/" target="_blank">
+                <svg class="footer-list-socmed-item-svg">
+                  <use href="./icons/icons.svg#icon-instagram"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-socmed-item">
+              <a class="footer-list-socmed-item-link" href="https://x.com/" target="_blank">
+                <svg class="footer-list-socmed-item-svg">
+                  <use href="./icons/icons.svg#icon-twitter"/>
+                </svg>
+              </a>
+            </li>                 
+            <li class="footer-list-socmed-item">
+              <a class="footer-list-socmed-item-link" href="https://www.facebook.com/" target="_blank">
+                <svg class="footer-list-socmed-item-svg">
+                  <use href="./icons/icons.svg#icon-facebook"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-socmed-item">
+              <a class="footer-list-socmed-item-link" href="https://www.linkedin.com/" target="_blank">
+                <svg class="footer-list-socmed-item-svg">
+                  <use href="./icons/icons.svg#icon-linkedin"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Subscribe</h3>
+          <form action="">
+            <textarea name="" id="" placeholder="E-mail"></textarea>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
